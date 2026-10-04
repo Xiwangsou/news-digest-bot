@@ -1,0 +1,32 @@
+{
+  "name": "news-digest-backend",
+  "version": "1.0.0",
+  "description": "Aggregation backend for News Digest — fetches, scores and ranks daily tech digests",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test:scrapers": "node src/test-scrapers.js"
+  },
+  "keywords": [
+    "news",
+    "aggregator",
+    "digest",
+    "rss",
+    "scraper"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "node-cron": "^3.0.3",
+    "node-fetch": "^3.3.2",
+    "rss-parser": "^3.13.0",
+    "sql.js": "^1.12.0"
+  }
+}
